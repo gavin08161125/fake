@@ -7,6 +7,12 @@
     <title>Document</title>
 </head>
 <style>
+
+    @font-face {
+    font-family: 'Poppins';
+    src: local("Poppins") ，
+            url('./Sriracha.ttf') format("opentype"),
+    }
     html{
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
@@ -19,7 +25,7 @@
         padding-left: 180px;
         padding-right: 160px;
         color: #fff;
-        font-family: Poppins,Roboto,-apple-system,"Helvetica Neue",Arial,sans-serif;
+        font-family: 'Poppins',Roboto,-apple-system,"Helvetica Neue",Arial,sans-serif;
         font-weight: 400;
         font-size: 1rem;
         line-height: 1.5;
@@ -59,7 +65,7 @@
         margin: 0px;
         font-size: 1.7rem;
         line-height: 1.5;
-        font-family: Poppins, Roboto, -apple-system, "Helvetica Neue", Arial, sans-serif;
+        font-family: 'Poppins', Roboto, -apple-system, "Helvetica Neue", Arial, sans-serif;
         font-weight: 200;
         z-index: 1;
         /* text-shadow:0 0 2px rgba(255, 255, 255, 0.7);; */
@@ -76,18 +82,18 @@
         
         position: absolute;
     }
-
+/* 
     .raffles{
         font-size: 65px;
-    }
+    } */
 
-    .users{
+    /* .users{
         font-size: 38px;
-    }
-
+    } */
+/* 
     .wins{
         font-size:38px;
-    }
+    } */
 
     .head{
         margin-top: 30px;
@@ -112,7 +118,7 @@
         font-weight: 750;
         font-size: 23px;
         line-height: 1.5;
-        font-family: Poppins, Roboto, -apple-system, "Helvetica Neue", Arial, sans-serif;    
+        font-family: 'Poppins', Roboto, -apple-system, "Helvetica Neue", Arial, sans-serif;    
     }
 
     .head-select{
@@ -130,7 +136,7 @@
     .head-select-timeframe-title, .head-select-timeframe-raffle{
         font-size: 13px;
         letter-spacing: 1px;
-        font-family: Poppins, Roboto, -apple-system, "Helvetica Neue", Arial, sans-serif;
+        font-family: 'Poppins', Roboto, -apple-system, "Helvetica Neue", Arial, sans-serif;
         margin-right: 8px;
         color: rgba(255, 255, 255, 0.7);
     }
@@ -153,8 +159,9 @@
 
 
     .img{
-        height: 30px;
-        width: 30px;
+        background-image: url("ref.PNG");
+        height: 60px;
+        width: 60px;
     }
 
 </style>
@@ -204,16 +211,16 @@
         </div>
         
         <div class="fake content" >
-                <span class="en raffles" >
+                <span class="en raffles" style="font-size: 65px;" >
                     255
                 </span>
-                <span class="en users">
+                <span class="en users " style="font-size: 38px;">
                     1,305
                 </span>
-                <span class="en wins">
+                <span class="en wins" style="font-size: 38px;">
                     3,250
                 </span>
-                <span class="en entries">
+                <span class="en entries" style="font-size: 38px;">
                     20,780
                 </span>
             
