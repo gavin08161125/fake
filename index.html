@@ -88,8 +88,113 @@
     .wins{
         font-size:38px;
     }
+
+    .head{
+        margin-top: 30px;
+        background-color: rgb(18, 18, 18);
+        width: 100%;
+        padding-left: 24px;
+        padding-right: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;
+        
+    }
+
+    .head-wtc{
+        display: flex;
+        align-items: center;
+        
+    }
+    .head-wtc h4{
+        margin: 0px;
+        font-weight: 750;
+        font-size: 23px;
+        line-height: 1.5;
+        font-family: Poppins, Roboto, -apple-system, "Helvetica Neue", Arial, sans-serif;    
+    }
+
+    .head-select{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .head-select-timeframe , .head-select-raffle{
+        width: 121.01px;
+        height: 47.98px;
+        margin-right: 8px;
+        text-align: center;        
+    }
+
+    .head-select-timeframe-title, .head-select-timeframe-raffle{
+        font-size: 13px;
+        letter-spacing: 1px;
+        font-family: Poppins, Roboto, -apple-system, "Helvetica Neue", Arial, sans-serif;
+        margin-right: 8px;
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    .select{
+        appearance:none;
+        -moz-appearance:none;
+        -webkit-appearance:none;
+        background: url("/arrow.png") no-repeat right center transparent;
+        display: flex;
+        width: 100%;
+        color: #fff;
+        border:none;
+        border-bottom: 1px solid;
+        font-size: 18px;
+        padding: 5px;
+       
+    }
+
+
+
+    .img{
+        height: 30px;
+        width: 30px;
+    }
+
 </style>
 <body>
+
+    <div class="head">
+        <div class="head-wtc">
+            <h4>WTC</h4>
+        </div>
+        <div class="head-select">
+            <div class="head-select-timeframe" >
+                <div class="head-select-timeframe-title" >Timeframe</div>
+
+                <div >
+                    <select class="select" name="" id="">
+                        <option value="">One month</option>
+                        <option value="">One week</option>
+                    </select>
+                    <!-- <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconStandard css-ntyfco" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ArrowDropDownIcon"><path d="M7 10l5 5 5-5z"></path></svg> -->
+
+                </div>
+            </div>
+            <div class="head-select-raffle">
+                <div class="head-select-timeframe-raffle" >Raffle type</div>
+                <div >
+                    <select  class="select" name="" id="">
+                        <option value="">All</option>
+                        <option value="">Raffle</option>
+                        <option value="">First come</option>
+                        <option value="">Wallet collection</option>
+                    </select>
+                    <!-- <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconStandard css-ntyfco" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ArrowDropDownIcon"><path d="M7 10l5 5 5-5z"></path></svg> -->
+                </div>
+            </div>
+
+            <div class="img">
+
+            </div>
+        </div>
+    </div>
     <div class="fake">
         <div class="title">
             <h6>Raffles</h6>
