@@ -139,6 +139,7 @@
         font-family: 'Poppins', Roboto, -apple-system, "Helvetica Neue", Arial, sans-serif;
         margin-right: 8px;
         color: rgba(255, 255, 255, 0.7);
+
     }
 
     .select{
@@ -146,17 +147,21 @@
         -moz-appearance:none;
         -webkit-appearance:none;
         background: url("./arrow.png") no-repeat right center transparent;
-        display: flex;
-        width: 100%;
+        display: -webkit-box;
         color: #fff;
         border:none;
         border-bottom: 1px solid;
         font-size: 18px;
         padding: 5px;
-       
+        width: 121px;
     }
 
-
+    .select option {
+        margin: 40px;
+        background: rgba(0, 0, 0, 0.3);
+        color: #fff;
+        text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    }
 
     .img{
         background-image: url("ref.PNG");
